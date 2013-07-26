@@ -1,0 +1,8 @@
+// This is the CLI syntax file of a test/sample program that handles
+// an employee roster of a company.
+
+// show echo receivers
+action a
+action a { c }
+
+

@@ -1,0 +1,6 @@
+//this is top cli files
+
+//enter config submode
+enable
+
+#include "config.cli"

@@ -1,0 +1,16 @@
+//this is config cli files
+
+#submode "st"
+
+//save config
+write
+
+//load config
+load
+
+//enter tamper submode
+configure
+
+#include "webtamper.cli"
+
+#endsubmode

@@ -1,0 +1,97 @@
+#submode "son"
+
+//config the tamper description
+description <STRING:content>
+
+//delete the description
+no description
+
+//config email address
+email <STRING:address>
+
+//delete email address
+no email
+
+//config connection attribution with server-ip
+connect protocol <LIST:sftp,ftp:protocol> <LIST:server-ip,hostname:object> <STRING:var> port <UINT:number> username <STRING:name> password cipher-text <STRING:pw>
+connect protocol <LIST:sftp,ftp:protocol> <LIST:server-ip,hostname:object> <STRING:var> port <UINT:number> username <STRING:name> password <STRING:pw>
+
+//delete connection attribution with server-ip
+no connect
+
+//config the document root
+document-root <STRING:path>
+
+//no  the document root
+no document-root
+
+//config monitor folder with depth
+monitor-folder depth <INT:level>
+
+//config monitor folder with root-folder
+monitor-folder root-folder <INT:seconds>
+
+//config monitor folder with other-folder
+monitor-folder other-folder <INT:seconds>
+
+//no monitor folder with depth
+no monitor-folder depth
+
+//no monitor folder with root-folder
+no monitor-folder root-folder
+
+//no monitor folder with other-folder
+no monitor-folder other-folder
+
+//config monitor file size
+monitor-file-size <UINT:number>
+
+//no config monitor file size
+no monitor-file-size
+
+//config monitor file type
+monitor-file-type exclude <STRING:extension>
+
+//no monitor file type
+no monitor-file-type exclude <STRING:extension>
+
+//config auto restore
+restore-mode <LIST:auto,manual:option>
+
+//default auto restore
+no restore-mode
+
+//enable monitor
+monitor <LIST:enable,disable:option>
+
+//disable monitor
+no monitor
+
+//set the disk with size (M)
+disk-size <INT:size>
+
+//restore the defualt size (50M)
+no disk-size
+
+//restore all tampered file
+restore-tamper all
+
+//restore file with name
+restore-tamper file <STRING:name>
+
+//view the tampered file content with filename
+view file-content <STRING:name>
+
+//view the tampered content with filename
+view tamper-content <STRING:name>
+
+//view the tampered filename
+view tamper-filename
+
+//delete all the file tampered
+clear-tamper all
+
+//delete the file tampered with filename
+clear-tamper file <STRING:name>
+
+#endsubmode

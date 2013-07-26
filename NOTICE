@@ -1,0 +1,18 @@
+            -*------ utf-8 -------*-
+
+FreeWAF Copyright 2013 The FreeWAF Development Team.
+
+This product includes software developed at
+The FreeWAF Development Team (http://www.freewaf.org/).
+
+Sftp transmission support is provided by the libssh2 library package,
+which is open source software, written by Sara Golemon¡¢Mikhail Gusarov¡¢
+The Written Word, Inc, Eli Fant, Daniel Stenberg, Simon Josefsson. 
+The original software is available from
+   http://www.libssh2.org/
+
+MD5 Message-Digest Algorithm, including various
+modifications by Ulrich Drepper <drepper@gnu.ai.mit.edu>
+
+Thanks authors of libmysqlclient. Sorry that we cannot list your names in this file,
+beacuse we have not found your real names.

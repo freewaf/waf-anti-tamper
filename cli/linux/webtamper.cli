@@ -1,0 +1,13 @@
+//this is web tamper cli files
+
+#submode "monther"
+
+//delete a tamper
+no tamper <STRING:name>
+
+//Enter tamper mode
+tamper <STRING:name>
+
+#include "swebtamper.cli"
+
+#endsubmode

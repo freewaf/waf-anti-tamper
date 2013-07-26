@@ -1,0 +1,62 @@
+                   -*------ utf-8 -------*-
+ 
+ 
+                         Anti-tamper
+
+  What is it?
+  -----------
+  Anti-tamper is an important function of FreeWAF software. 
+  It's a supplement of protection engine. The protection 
+  engine of FreeWAF cannot supply 100% security protection.
+  Once high-level hacker bypasses the FreeWaf protection and 
+  tampers you website, then you need to recover your website 
+  as soon as possible. If the site has not been resumed as 
+  soon as possible, the tampered web pages may be exposed 
+  over a long period of time, and cause bad effects. Anti-tamper
+  can slove this problem.
+
+
+  The Latest Version
+  ------------------
+
+  Details of the latest version can be found on the FreeWAF
+  website page under <https://sourceforge.net/p/wafw>.
+
+  
+  Documentation
+  -------------
+
+  The documentation available as of the date of this release 
+  can be found at <http://www.freewaf.org>.
+  
+  
+  Installation
+  ------------
+
+  Please see the file called INSTALL.
+  
+  
+  Licensing
+  ---------
+
+  Please see the file called LICENSE.GPLv2.
+  
+  
+  Contacts
+  --------
+     o If you want to be informed about new code releases, bug fixes,
+       function fixes, general news and information about the FreeWAF
+       open the <http://www.freewaf.org>.
+
+     o If you have a concrete bug report for FreeWAF, please go to the
+       FreeWAF Bug System and submit your report:
+       <http://www.freewaf.org/bug/>
+
+     o If you develop new function, the function can be submitted 
+       to the Feature Patches forum of Tickets at 
+       <http://www.freewaf.org/upload/forum.php>. The FreeWAF team will review
+       it, in through the audit, as you will submit its to the code 
+       repository.    
+           
+     o If you want to communicate with FreeWAF developers real-time, 
+       join the QQ group: 196138446.

@@ -1,0 +1,35 @@
+//cli for show
+
+//show tamper configure 
+show tamper { <STRING:tampername> }
+
+//show use status of disk of tamper 
+show tamper-disk
+
+//show all recent hours tamper-log
+show tamper-log all 
+
+//show all tamper-log
+show tamper-log all recent <UINT:hours>
+
+//show specified time all tamper-log 
+show tamper-log all start-time <UINT:start_year> <UINT:start_month> <UINT:start_day> <UINT:start_hour> <UINT:start_min> <UINT:start_sec> end-time <UINT:end_year> <UINT:end_month> <UINT:end_day> <UINT:end_hour> <UINT:end_min> <UINT:end_sec>
+
+//show tamper-log of some tamper
+show tamper-log tamper <STRING:name>
+
+//show recent hours tamper-log of some tamper
+show tamper-log tamper <STRING:name> recent <UINT:hours>
+
+//show specified time tamper-log of some tamper 
+show tamper-log tamper <STRING:name> start-time <UINT:start_year> <UINT:start_month> <UINT:start_day> <UINT:start_hour> <UINT:start_min> <UINT:start_sec> end-time <UINT:end_year> <UINT:end_month> <UINT:end_day> <UINT:end_hour> <UINT:end_min> <UINT:end_sec>
+
+//show all logs
+show admin-log
+//show recent hours logs
+show admin-log recent <UINT:hours>
+//show specified time logs
+show admin-log start-time <UINT:start_year> <UINT:start_month> <UINT:start_day> <UINT:start_hour> <UINT:start_min> <UINT:start_sec> end-time <UINT:end_year> <UINT:end_month> <UINT:end_day> <UINT:end_hour> <UINT:end_min> <UINT:end_sec>
+
+//show all configure information
+show running-config

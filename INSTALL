@@ -1,0 +1,71 @@
+﻿                    -*------ utf-8 -------*-
+
+    FreeWAF-Anti-Tamper Installation On Linux Platform(Debian Series)
+    ----------------------------------------------------------------- 
+    
+    Compilation Preparation     
+    -----------------------
+    Before compiling Anti-Tamper, need to get the following essential libraries:
+        1)  CLIParser
+             32-bit Desktop: download from http://www.freewaf.org/
+             32-bit Server: download from http://www.freewaf.org/
+             64-bit Server: download from http://www.freewaf.org/
+        2)  apr
+             32-bit Desktop: download from http://www.freewaf.org/
+             32-bit Server: download from http://www.freewaf.org/
+             64-bit Server: download from http://www.freewaf.org/
+        3)  apr-util
+             32-bit Desktop: download from http://www.freewaf.org/
+             32-bit Server: download from http://www.freewaf.org/
+             64-bit Server: download from http://www.freewaf.org/
+        4)  libssh2
+             download from http://www.libssh2.org/download/
+        5)  libmysqlclient
+             Platform: Ubuntu 11.04 i686 
+             Lib Name: libmysqlclient-dev   
+             Version: 5.1.63
+        NOTES：
+             1) Above libraries are got on the debian Linux series by apt-get tools.
+                The rest series of Linux, use the appropriate tools.
+              
+    Compilation And Installation
+    -----------------------------            
+        ./configure --prefix=PREFIX 
+            --with-apr=APR_PREFIX
+            --with-apr-util=APR_UTIL_PREFIX
+            --with-ssh2=SSH2_PREFIX
+            --with-cparser=CPARSER_PREFIX
+        make
+        make install
+
+        NOTES:
+            1) PREFIX，anti-tamper install location，such as /usr/local/waf/anti-tamper.
+            2) APR_PREFIX, apr download location，such as /usr/local/waf/apr.
+            3) APR_UTIL_PREFIX, apr-util download location, such as /usr/local/waf/apr-util.
+            4) SSH2_PREFIX, libssh2 download location, such as /usr/local/waf/libssh2.
+            5) CPARSER_PREFIX, cparser download location, such as /usr/local/waf/cparser.
+    
+    Running
+    -------
+    Before runing Anti-tamper, need to install the following tools.
+        1) mysql-server
+            Platform: Ubuntu 11.04 i686   
+            Lib Name: mysql-server
+            Version: 5.1.63
+            Then run the five sql scripts under misc dir.
+            For example, mysql -uusername -ppassword < misc/device_info.sql
+        NOTES：
+             1) Above tools are used on the debian Linux series.
+                The rest series of Linux, use the appropriate tools.
+                
+    Postscript
+    ----------
+      The FreeWAF Development Team cannot field user's compilation and installation 
+      questions. There are many valuable forums to help you get started. Please refer your
+      questions to the appropriate forum, such as the Users Mailing List at
+        http://www.freewaf.org/upload/forum.php
+    
+    Thanks for using FreeWAF, version 1.0.0。
+
+                                                                FreeWAF Development Team
+                                                                 http://www.freewaf.org/
